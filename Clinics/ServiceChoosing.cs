@@ -34,8 +34,11 @@ namespace Clinics
             DateSelector.Enabled = false;
             CheckTB.Enabled = false;
             OkBtn.Enabled = false;
+            ClinicSelector.SelectedIndex = -1;
             ClinicSelector.Items.Clear();
+            DateSelector.SelectedIndex = -1;
             DateSelector.Items.Clear();
+            CheckTB.Text = "";
         }
 
         private void ServiceSelector_SelectedIndexChanged(object sender, EventArgs e)
@@ -52,18 +55,26 @@ namespace Clinics
 
         private void ClinicSelector_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (ClinicSelector.SelectedIndex == -1)
+            {
+                return;
+            }
             DateSelector.SelectedIndex = -1;
             DateSelector.Items.Clear();
             DateSelector.Enabled = true;
             _clinic = clinicsForSelector[ClinicSelector.SelectedIndex];
 
-            datesForSelector = Database.VisitDates.Where(d => d.ClinicId == _clinic.Id && d.ServiceId == _service.Id).ToArray();
+            datesForSelector = Database.VisitDates.Where(d => d.ClinicId == _clinic.Id && d.ServiceId == _service.Id && d.AreTaken == false).ToArray();
             DateSelector.Items.Clear();
             DateSelector.Items.AddRange(datesForSelector.Select(d => d.Date.ToString()).ToArray());
         }
 
         private void DateSelector_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (DateSelector.SelectedIndex == -1)
+            {
+                return;
+            }
             _date = datesForSelector[DateSelector.SelectedIndex];
             CheckTB.Enabled = true;
             PriceTB.Text = _date.Price.ToString();
@@ -86,6 +97,7 @@ namespace Clinics
             Database.Requests.Add(request);
             CheckRequest form1 = new CheckRequest(request);
             form1.ShowDialog();
+            DisableAll();
         }
     }
 }

@@ -48,6 +48,7 @@ namespace Databases
         public int ServiceId { get; set; }
         public int ClinicId { get; set; }
         public DateTime Date { get; set; }
+        public bool AreTaken { get; set; } = false;
         public decimal Price { get; set; }
     }
 
