@@ -34,7 +34,8 @@ namespace Clinics
         private void BuyBtn_Click(object sender, EventArgs e)
         {
             BuyForm form = new BuyForm(_request);
-            form.Activate();
+            form.ShowDialog();
+            Close();
         }
     }
 }

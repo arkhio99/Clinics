@@ -84,9 +84,8 @@ namespace Clinics
             };
 
             Database.Requests.Add(request);
-
             CheckRequest form1 = new CheckRequest(request);
-            form1.Activate();
+            form1.ShowDialog();
         }
     }
 }
