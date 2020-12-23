@@ -17,7 +17,7 @@ namespace Clinics
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Authorization());
+            Application.Run(new HelloForm());
         }
     }
 }

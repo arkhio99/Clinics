@@ -66,6 +66,7 @@ namespace Databases
             {
                 Id = Guid.Parse("04cca6b9-0914-4f67-822d-c1b165f57043"),
                 Username = "user1",
+                Email = "III@gmail.com",
                 Password = "password1",
                 FIO = "Иванов Иван Иванович",
                 DocType = DocType.Passport,

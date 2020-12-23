@@ -35,41 +35,40 @@
             this.RegistrationBtn = new System.Windows.Forms.Button();
             this.LoginTB = new System.Windows.Forms.TextBox();
             this.PasswordTB = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(81, 139);
+            this.label1.Location = new System.Drawing.Point(13, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 15);
+            this.label1.Size = new System.Drawing.Size(55, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Логин:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(80, 170);
+            this.label2.Location = new System.Drawing.Point(11, 62);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 15);
+            this.label2.Size = new System.Drawing.Size(65, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Пароль:";
             // 
             // PasswordErrorLbl
             // 
             this.PasswordErrorLbl.AutoSize = true;
-            this.PasswordErrorLbl.Location = new System.Drawing.Point(80, 193);
+            this.PasswordErrorLbl.Location = new System.Drawing.Point(11, 92);
             this.PasswordErrorLbl.Name = "PasswordErrorLbl";
-            this.PasswordErrorLbl.Size = new System.Drawing.Size(0, 15);
+            this.PasswordErrorLbl.Size = new System.Drawing.Size(0, 20);
             this.PasswordErrorLbl.TabIndex = 2;
             // 
             // LogOnBtn
             // 
-            this.LogOnBtn.Location = new System.Drawing.Point(81, 214);
+            this.LogOnBtn.Location = new System.Drawing.Point(13, 120);
+            this.LogOnBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.LogOnBtn.Name = "LogOnBtn";
-            this.LogOnBtn.Size = new System.Drawing.Size(88, 23);
+            this.LogOnBtn.Size = new System.Drawing.Size(101, 31);
             this.LogOnBtn.TabIndex = 3;
             this.LogOnBtn.Text = "Войти";
             this.LogOnBtn.UseVisualStyleBackColor = true;
@@ -77,9 +76,10 @@
             // 
             // RegistrationBtn
             // 
-            this.RegistrationBtn.Location = new System.Drawing.Point(175, 214);
+            this.RegistrationBtn.Location = new System.Drawing.Point(120, 120);
+            this.RegistrationBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.RegistrationBtn.Name = "RegistrationBtn";
-            this.RegistrationBtn.Size = new System.Drawing.Size(93, 23);
+            this.RegistrationBtn.Size = new System.Drawing.Size(106, 31);
             this.RegistrationBtn.TabIndex = 4;
             this.RegistrationBtn.Text = "Регистрация";
             this.RegistrationBtn.UseVisualStyleBackColor = true;
@@ -87,43 +87,25 @@
             // 
             // LoginTB
             // 
-            this.LoginTB.Location = new System.Drawing.Point(147, 136);
+            this.LoginTB.Location = new System.Drawing.Point(88, 16);
+            this.LoginTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.LoginTB.Name = "LoginTB";
-            this.LoginTB.Size = new System.Drawing.Size(121, 23);
+            this.LoginTB.Size = new System.Drawing.Size(138, 27);
             this.LoginTB.TabIndex = 5;
             // 
             // PasswordTB
             // 
-            this.PasswordTB.Location = new System.Drawing.Point(147, 167);
+            this.PasswordTB.Location = new System.Drawing.Point(88, 58);
+            this.PasswordTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PasswordTB.Name = "PasswordTB";
-            this.PasswordTB.Size = new System.Drawing.Size(121, 23);
+            this.PasswordTB.Size = new System.Drawing.Size(138, 27);
             this.PasswordTB.TabIndex = 6;
-            // 
-            // label3
-            // 
-            this.label3.Location = new System.Drawing.Point(50, 29);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(274, 61);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Добро пожаловать в сервис по оформлению визита в сеть клиник \"БС\"";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            this.label4.Location = new System.Drawing.Point(70, 75);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(237, 54);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Перед тем как оформить визит, войдите в свой аккаунт или зарегистрируйте новый";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Authorization
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(360, 253);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.ClientSize = new System.Drawing.Size(264, 180);
             this.Controls.Add(this.PasswordTB);
             this.Controls.Add(this.LoginTB);
             this.Controls.Add(this.RegistrationBtn);
@@ -131,6 +113,7 @@
             this.Controls.Add(this.PasswordErrorLbl);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Authorization";
             this.Text = "Авторизация";
             this.Activated += new System.EventHandler(this.Authorization_Activated);
@@ -148,7 +131,5 @@
         private System.Windows.Forms.Button RegistrationBtn;
         private System.Windows.Forms.TextBox LoginTB;
         private System.Windows.Forms.TextBox PasswordTB;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
     }
 }

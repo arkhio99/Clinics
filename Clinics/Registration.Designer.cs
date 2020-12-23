@@ -54,146 +54,163 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 13);
+            this.label3.Location = new System.Drawing.Point(15, 17);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 15);
+            this.label3.Size = new System.Drawing.Size(76, 20);
             this.label3.TabIndex = 0;
             this.label3.Text = "Фамилия:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 36);
+            this.label1.Location = new System.Drawing.Point(14, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 15);
+            this.label1.Size = new System.Drawing.Size(42, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Имя:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 59);
+            this.label2.Location = new System.Drawing.Point(15, 79);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 15);
+            this.label2.Size = new System.Drawing.Size(75, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Отчество:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 103);
+            this.label4.Location = new System.Drawing.Point(15, 137);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 15);
+            this.label4.Size = new System.Drawing.Size(55, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "E-mail:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 126);
+            this.label5.Location = new System.Drawing.Point(15, 168);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 15);
+            this.label5.Size = new System.Drawing.Size(65, 20);
             this.label5.TabIndex = 4;
             this.label5.Text = "Пароль:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(13, 149);
+            this.label6.Location = new System.Drawing.Point(15, 199);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(114, 15);
+            this.label6.Size = new System.Drawing.Size(144, 20);
             this.label6.TabIndex = 5;
             this.label6.Text = "Повторите Пароль:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(13, 172);
+            this.label7.Location = new System.Drawing.Point(15, 229);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 15);
+            this.label7.Size = new System.Drawing.Size(115, 20);
             this.label7.TabIndex = 6;
             this.label7.Text = "Тип документа:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(13, 195);
+            this.label8.Location = new System.Drawing.Point(15, 260);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(146, 15);
+            this.label8.Size = new System.Drawing.Size(184, 20);
             this.label8.TabIndex = 7;
             this.label8.Text = "Серия-номер документа:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(13, 218);
+            this.label9.Location = new System.Drawing.Point(15, 291);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(104, 15);
+            this.label9.Size = new System.Drawing.Size(130, 20);
             this.label9.TabIndex = 8;
             this.label9.Text = "Номер телефона:";
             // 
             // SecondNameTB
             // 
-            this.SecondNameTB.Location = new System.Drawing.Point(199, 10);
+            this.SecondNameTB.Location = new System.Drawing.Point(227, 13);
+            this.SecondNameTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.SecondNameTB.Name = "SecondNameTB";
-            this.SecondNameTB.Size = new System.Drawing.Size(128, 23);
+            this.SecondNameTB.Size = new System.Drawing.Size(146, 27);
             this.SecondNameTB.TabIndex = 9;
+            this.SecondNameTB.TextChanged += new System.EventHandler(this.SecondNameTB_TextChanged);
             // 
             // NameTB
             // 
-            this.NameTB.Location = new System.Drawing.Point(199, 33);
+            this.NameTB.Location = new System.Drawing.Point(227, 44);
+            this.NameTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NameTB.Name = "NameTB";
-            this.NameTB.Size = new System.Drawing.Size(128, 23);
+            this.NameTB.Size = new System.Drawing.Size(146, 27);
             this.NameTB.TabIndex = 9;
+            this.NameTB.TextChanged += new System.EventHandler(this.NameTB_TextChanged);
             // 
             // FatherNameTB
             // 
-            this.FatherNameTB.Location = new System.Drawing.Point(199, 56);
+            this.FatherNameTB.Location = new System.Drawing.Point(227, 75);
+            this.FatherNameTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.FatherNameTB.Name = "FatherNameTB";
-            this.FatherNameTB.Size = new System.Drawing.Size(128, 23);
+            this.FatherNameTB.Size = new System.Drawing.Size(146, 27);
             this.FatherNameTB.TabIndex = 9;
+            this.FatherNameTB.TextChanged += new System.EventHandler(this.FatherNameTB_TextChanged);
             // 
             // EmailTB
             // 
-            this.EmailTB.Location = new System.Drawing.Point(199, 100);
+            this.EmailTB.Location = new System.Drawing.Point(227, 133);
+            this.EmailTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.EmailTB.Name = "EmailTB";
-            this.EmailTB.Size = new System.Drawing.Size(128, 23);
+            this.EmailTB.Size = new System.Drawing.Size(146, 27);
             this.EmailTB.TabIndex = 9;
+            this.EmailTB.TextChanged += new System.EventHandler(this.EmailTB_TextChanged);
             // 
             // PasswordTB
             // 
-            this.PasswordTB.Location = new System.Drawing.Point(199, 123);
+            this.PasswordTB.Location = new System.Drawing.Point(227, 164);
+            this.PasswordTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PasswordTB.Name = "PasswordTB";
-            this.PasswordTB.Size = new System.Drawing.Size(128, 23);
+            this.PasswordTB.Size = new System.Drawing.Size(146, 27);
             this.PasswordTB.TabIndex = 9;
+            this.PasswordTB.TextChanged += new System.EventHandler(this.PasswordTB_TextChanged);
             // 
             // Password2TB
             // 
-            this.Password2TB.Location = new System.Drawing.Point(199, 146);
+            this.Password2TB.Location = new System.Drawing.Point(227, 195);
+            this.Password2TB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Password2TB.Name = "Password2TB";
-            this.Password2TB.Size = new System.Drawing.Size(128, 23);
+            this.Password2TB.Size = new System.Drawing.Size(146, 27);
             this.Password2TB.TabIndex = 9;
             this.Password2TB.TextChanged += new System.EventHandler(this.Password2TB_TextChanged);
             // 
             // DocCredentialsTB
             // 
-            this.DocCredentialsTB.Location = new System.Drawing.Point(199, 192);
+            this.DocCredentialsTB.Location = new System.Drawing.Point(227, 256);
+            this.DocCredentialsTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.DocCredentialsTB.Name = "DocCredentialsTB";
-            this.DocCredentialsTB.Size = new System.Drawing.Size(128, 23);
+            this.DocCredentialsTB.Size = new System.Drawing.Size(146, 27);
             this.DocCredentialsTB.TabIndex = 9;
+            this.DocCredentialsTB.TextChanged += new System.EventHandler(this.DocCredentialsTB_TextChanged);
             // 
             // PhoneNumberTB
             // 
-            this.PhoneNumberTB.Location = new System.Drawing.Point(199, 215);
+            this.PhoneNumberTB.Location = new System.Drawing.Point(227, 287);
+            this.PhoneNumberTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PhoneNumberTB.Name = "PhoneNumberTB";
-            this.PhoneNumberTB.Size = new System.Drawing.Size(128, 23);
+            this.PhoneNumberTB.Size = new System.Drawing.Size(146, 27);
             this.PhoneNumberTB.TabIndex = 9;
+            this.PhoneNumberTB.TextChanged += new System.EventHandler(this.PhoneNumberTB_TextChanged);
             // 
             // RegisterBtn
             // 
-            this.RegisterBtn.Location = new System.Drawing.Point(13, 244);
+            this.RegisterBtn.Enabled = false;
+            this.RegisterBtn.Location = new System.Drawing.Point(15, 325);
+            this.RegisterBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.RegisterBtn.Name = "RegisterBtn";
-            this.RegisterBtn.Size = new System.Drawing.Size(314, 23);
+            this.RegisterBtn.Size = new System.Drawing.Size(359, 31);
             this.RegisterBtn.TabIndex = 10;
             this.RegisterBtn.Text = "Зарегистрироваться";
             this.RegisterBtn.UseVisualStyleBackColor = true;
@@ -202,32 +219,36 @@
             // DocTypeSelector
             // 
             this.DocTypeSelector.FormattingEnabled = true;
-            this.DocTypeSelector.Location = new System.Drawing.Point(199, 169);
+            this.DocTypeSelector.Location = new System.Drawing.Point(227, 225);
+            this.DocTypeSelector.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.DocTypeSelector.Name = "DocTypeSelector";
-            this.DocTypeSelector.Size = new System.Drawing.Size(128, 23);
+            this.DocTypeSelector.Size = new System.Drawing.Size(146, 28);
             this.DocTypeSelector.TabIndex = 12;
+            this.DocTypeSelector.SelectedIndexChanged += new System.EventHandler(this.DocTypeSelector_SelectedIndexChanged);
             // 
             // UsernameTB
             // 
-            this.UsernameTB.Location = new System.Drawing.Point(199, 77);
+            this.UsernameTB.Location = new System.Drawing.Point(227, 103);
+            this.UsernameTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.UsernameTB.Name = "UsernameTB";
-            this.UsernameTB.Size = new System.Drawing.Size(128, 23);
+            this.UsernameTB.Size = new System.Drawing.Size(146, 27);
             this.UsernameTB.TabIndex = 13;
+            this.UsernameTB.TextChanged += new System.EventHandler(this.UsernameTB_TextChanged);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(13, 80);
+            this.label10.Location = new System.Drawing.Point(15, 107);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(41, 15);
+            this.label10.Size = new System.Drawing.Size(52, 20);
             this.label10.TabIndex = 14;
             this.label10.Text = "Логин";
             // 
             // Registration
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(341, 280);
+            this.ClientSize = new System.Drawing.Size(390, 373);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.UsernameTB);
             this.Controls.Add(this.DocTypeSelector);
@@ -249,6 +270,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Registration";
             this.Text = "Регистрация";
             this.ResumeLayout(false);
