@@ -37,7 +37,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 340);
+            this.label1.Location = new System.Drawing.Point(59, 340);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(492, 20);
             this.label1.TabIndex = 0;
@@ -45,7 +45,7 @@
             // 
             // HelloPB
             // 
-            this.HelloPB.Location = new System.Drawing.Point(113, 12);
+            this.HelloPB.Location = new System.Drawing.Point(165, 12);
             this.HelloPB.Name = "HelloPB";
             this.HelloPB.Size = new System.Drawing.Size(287, 325);
             this.HelloPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -54,7 +54,7 @@
             // 
             // StartBtn
             // 
-            this.StartBtn.Location = new System.Drawing.Point(204, 373);
+            this.StartBtn.Location = new System.Drawing.Point(256, 373);
             this.StartBtn.Name = "StartBtn";
             this.StartBtn.Size = new System.Drawing.Size(94, 29);
             this.StartBtn.TabIndex = 2;
@@ -66,12 +66,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(515, 450);
+            this.ClientSize = new System.Drawing.Size(630, 450);
             this.Controls.Add(this.StartBtn);
             this.Controls.Add(this.HelloPB);
             this.Controls.Add(this.label1);
             this.Name = "HelloForm";
-            this.Text = "Приветствие";
+            this.Text = "Сервис по оформлению визита в сеть клиник";
             ((System.ComponentModel.ISupportInitialize)(this.HelloPB)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
